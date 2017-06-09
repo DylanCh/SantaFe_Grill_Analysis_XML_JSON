@@ -10,11 +10,11 @@ def run():
     if (xmlSource.lower() is 'y') or xmlSource.lower()== 'y' :
         parse(testXmlDoc)
     elif xmlSource.lower() is 'h' or xmlSource.lower()=='h' :
-        exportOptions = raw_input('Export using SPSS Add-on - 1 \n Export using SPSS and Excel - 2 \n')
+        exportOptions = raw_input('Export using SPSS Add-on - 1 \nExport using SPSS and Excel - 2 \n')
         if exportOptions is '1':
-            webbrowser.Chrome('https://www.ibm.com/support/knowledgecenter/SSLVQG_7.0.0/com.spss.ddl/xml_export.htm')
+            webbrowser.open('https://www.ibm.com/support/knowledgecenter/SSLVQG_7.0.0/com.spss.ddl/xml_export.htm')
         elif exportOptions is '2':
-            webbrowser.Chrome('https://support.office.com/en-us/article/Export-XML-data-0b21f51b-56d6-48f0-83d9-a89637cd4360')
+            webbrowser.open('https://support.office.com/en-us/article/Export-XML-data-0b21f51b-56d6-48f0-83d9-a89637cd4360')
     else: 
         print('Thank you for using XMLParser')
         
