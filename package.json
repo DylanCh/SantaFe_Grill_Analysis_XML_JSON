@@ -1,0 +1,8 @@
+{
+    "name": "santa fe",
+    "dependencies": {
+        "xmltodict" :"*",
+        "json":"*",
+        "webbrowser":"*"
+    }
+}
